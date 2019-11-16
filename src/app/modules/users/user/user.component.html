@@ -1,0 +1,49 @@
+<div class="emp-form">
+  <div class="row">
+    <!-- <div class="col-md-6 form-group">
+      <input placeholder="Firts Name" class="form-control" [(ngModel)]="employeeService.currentEmployee.firstName">
+    </div>
+    <div class="col-md-6 form-group">
+      <input placeholder="Last Name" class="form-control" [(ngModel)]="employeeService.currentEmployee.lastName">
+    </div> -->
+    <div class="col-md-6 form-group">
+      <input placeholder="Nombre" class="form-control" [(ngModel)]="userService.currentUser.name">
+    </div>
+    <div class="col-md-6 form-group">
+      <input placeholder="Apellido" class="form-control" [(ngModel)]="userService.currentUser.lastname">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 form-group">
+      <input placeholder="Email" class="form-control" [(ngModel)]="userService.currentUser.email">
+    </div>
+  </div>
+  <div class="row">
+    <!-- <div class="col-md-6 form-group">
+      <input placeholder="Address" class="form-control" [(ngModel)]="employeeService.currentEmployee.address">
+    </div> -->
+    <!-- <div class="col-md-6 form-group">
+      <input placeholder="Contact Number" class="form-control" [(ngModel)]="employeeService.currentEmployee.contactNumber">
+    </div> -->
+    <div class="col-md-6 form-group">
+      <input placeholder="Telefono" class="form-control" [(ngModel)]="userService.currentUser.phone">
+    </div>
+    <div class="col-md-6 form-group">
+      <input placeholder="Edad" class="form-control" [(ngModel)]="userService.currentUser.age">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <button class="btn btn-success btn-lg btn-block" (click)="createUser(userService.currentUser)">
+        <i class="fa fa-save"></i>
+        Guardar
+      </button>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-lg btn-block" (click)="clearUser(userService.currentUser)">
+        <i class="fa fa-retweet"></i>
+        Limpiar
+      </button>
+    </div>
+  </div>
+</div>
